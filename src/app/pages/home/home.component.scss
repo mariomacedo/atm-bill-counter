@@ -1,8 +1,16 @@
 li {
   margin: 1rem;
   cursor: pointer;
-}
 
-li:hover {
-  color: #c7802e;
+  &.disabled {
+    color: #afafaf;
+    cursor: default;
+    &:hover {
+      color: #afafaf;
+    }
+  }
+
+  &:hover {
+    color: #c7802e;
+  }
 }
