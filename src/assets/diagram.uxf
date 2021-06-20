@@ -1,11 +1,45 @@
-<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>202</x><y>90</y><w>210</w><h>190</h></coordinates><panel_attributes>Cliente
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>122</x><y>50</y><w>210</w><h>140</h></coordinates><panel_attributes>Cliente
 --
--id: Long
-_-ClassAttribute: Long_
+- id
+- tipo
+- contas
+- cartoes
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2</x><y>280</y><w>210</w><h>90</h></coordinates><panel_attributes>Pessoa Física
 --
-#Operation(i: int): int
-/+AbstractOperation()/
+- cpf
+- rg
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>232</x><y>280</y><w>210</w><h>90</h></coordinates><panel_attributes>Pessoa Jurídica
 --
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+- cnpj
+- incriçãoEstadual
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>180</y><w>170</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes><additional_attributes>10;10;10;60;130;60;130;100</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>180</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes><additional_attributes>130;10;130;60;10;60;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>642</x><y>70</y><w>210</w><h>90</h></coordinates><panel_attributes>Banco
+--
+
+
+--
++ logarUsuario()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>90</y><w>340</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..*
+m2=
+</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>642</x><y>230</y><w>210</w><h>170</h></coordinates><panel_attributes>Caixa Eletrônico
+--
+- id
+--
++ liga()
++ desliga()
++ lerCartao()
++ ejetarCartao()
++ verificaPassword()
++ realizaSaque()
+...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>150</y><w>40</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>210</y><w>50</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+1..*</panel_attributes><additional_attributes>10;20;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>642</x><y>450</y><w>210</w><h>90</h></coordinates><panel_attributes>Dispenser
+--
+- dinheiro
+--
++ contaDinheiro()
++ saldo()
++ saque()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>390</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>
